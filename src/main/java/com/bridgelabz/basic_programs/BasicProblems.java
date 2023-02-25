@@ -19,6 +19,12 @@ public class BasicProblems {
         basicProblems.getNthHarmonicNo(harmonicNo);
         System.out.println();
         basicProblems.getPrimeFactors(335);
+        basicProblems.computeQuotientRemainder(15,4);
+    }
+
+    void computeQuotientRemainder(int noOne, int noTwo) {
+        System.out.println("Quotient is: " + noOne / noTwo);
+        System.out.println("Remainder is: " + noOne % noTwo);
     }
 
     void getPrimeFactors(int number) {
