@@ -9,6 +9,18 @@ public class BasicProblems {
         basicProblems.getPercentageOfHeadTail(noOfTimesCoinToFlip);
         int year = 2000;
         basicProblems.checkForLeapYear(year);
+        System.out.println("Enter the number to get power of two value");
+        int number = new Scanner(System.in).nextInt();
+        basicProblems.getPowerOfTwo(number);
+    }
+
+    void getPowerOfTwo(int number) {
+        int valueOfPower = 1;
+        for (int i = 1; i <= number; i++) {
+            valueOfPower = valueOfPower * 2;
+            System.out.println("Table for power of 2 is: " + valueOfPower);
+        }
+
     }
 
     void checkForLeapYear(int year) {
