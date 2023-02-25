@@ -7,19 +7,30 @@ public class BasicProblems {
         BasicProblems basicProblems = new BasicProblems();
         int noOfTimesCoinToFlip = 10450;
         basicProblems.getPercentageOfHeadTail(noOfTimesCoinToFlip);
-        System.out.println();
+        System.out.println("========================================");
         int year = 2000;
         basicProblems.checkForLeapYear(year);
-        System.out.println();
+        System.out.println("========================================");
         System.out.println("Enter the number to get power of two value");
         int number = new Scanner(System.in).nextInt();
         basicProblems.getPowerOfTwo(number);
-        System.out.println();
+        System.out.println("========================================");
         int harmonicNo = 15;
         basicProblems.getNthHarmonicNo(harmonicNo);
-        System.out.println();
+        System.out.println("========================================");
         basicProblems.getPrimeFactors(335);
+        System.out.println("========================================");
         basicProblems.computeQuotientRemainder(15,4);
+        System.out.println("========================================");
+        basicProblems.swappingOfTwoNos(12,15);
+    }
+
+    void swappingOfTwoNos(int numOne, int numTwo) {
+        System.out.println("Numbers before swapping: No 1 is " + numOne + " No 2 is " + numTwo);
+        int temp = numOne;
+        numOne = numTwo;
+        numTwo = temp;
+        System.out.println("Numbers before swapping: No 1 is " + numOne + " No 2 is " + numTwo);
     }
 
     void computeQuotientRemainder(int noOne, int noTwo) {
