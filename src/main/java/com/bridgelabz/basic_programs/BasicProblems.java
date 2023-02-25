@@ -27,7 +27,27 @@ public class BasicProblems {
         basicProblems.checkNoEvenOrOdd(12);
         System.out.println("========================================");
         basicProblems.checkVowelOrConsonant('A');
+        System.out.println("========================================");
+        basicProblems.findLargest(25,15,12);
     }
+
+    void findLargest(int noOne, int noTwo, int noThree) {
+        if (noOne > noTwo) {
+            if (noOne > noThree) {
+                System.out.println(noOne + " is largest number");
+            }
+            else {
+                System.out.println(noThree + " is largest number");
+            }
+        }
+        else if (noTwo > noThree) {
+            System.out.println(noTwo + " is largest number");
+        }
+        else {
+            System.out.println(noThree + " is largest number");
+        }
+    }
+
     void checkVowelOrConsonant(char alphabet) {
         alphabet = Character.toLowerCase(alphabet);
         if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == '0' || alphabet == 'u')
@@ -43,12 +63,12 @@ public class BasicProblems {
             System.out.println(no + " is odd number");
     }
 
-    void swappingOfTwoNos(int numOne, int numTwo) {
-        System.out.println("Numbers before swapping: No 1 is " + numOne + " No 2 is " + numTwo);
-        int temp = numOne;
-        numOne = numTwo;
-        numTwo = temp;
-        System.out.println("Numbers before swapping: No 1 is " + numOne + " No 2 is " + numTwo);
+    void swappingOfTwoNos(int noOne, int noTwo) {
+        System.out.println("Numbers before swapping: No 1 is " + noOne + " No 2 is " + noTwo);
+        int temp = noOne;
+        noOne = noTwo;
+        noTwo = temp;
+        System.out.println("Numbers before swapping: No 1 is " + noOne + " No 2 is " + noTwo);
     }
 
     void computeQuotientRemainder(int noOne, int noTwo) {
@@ -66,8 +86,9 @@ public class BasicProblems {
 
         }
 
-        if (number > 1)
-        System.out.println(number);
+        if (number > 1) {
+            System.out.println(number);
+        }
 
     }
 
