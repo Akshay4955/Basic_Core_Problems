@@ -18,6 +18,22 @@ public class BasicProblems {
         int harmonicNo = 15;
         basicProblems.getNthHarmonicNo(harmonicNo);
         System.out.println();
+        basicProblems.getPrimeFactors(335);
+    }
+
+    void getPrimeFactors(int number) {
+        System.out.println("Prime factors of number " + number + " are");
+        for (int i = 2; i <= Math.sqrt(number); i++) {
+            while (number % i == 0) {
+                System.out.println(i + " ");
+                number /= i;
+            }
+
+        }
+
+        if (number > 1)
+        System.out.println(number);
+
     }
 
     void getNthHarmonicNo(int harmonicNo) {
