@@ -1,10 +1,33 @@
 package com.bridgelabz.basic_programs;
 
+import java.util.Scanner;
+
 public class BasicProblems {
     public static void main(String[] args) {
         int noOfTimesCoinToFlip = 10450;
         BasicProblems basicProblems = new BasicProblems();
         basicProblems.getPercentageOfHeadTail(noOfTimesCoinToFlip);
+        int year = 2000;
+        basicProblems.checkForLeapYear(year);
+    }
+
+    void checkForLeapYear(int year) {
+        if (year % 4 == 0) {
+            if (year % 100 == 0) {
+                if (year % 400 == 0) {
+                    System.out.println(year + " year is a leap year");
+                } else {
+                    System.out.println(year + " year is not a leap year");
+                }
+
+            } else {
+                System.out.println(year + " year is a Leap Year");
+            }
+
+        } else {
+            System.out.println(year + " year is not a Leap Year");
+        }
+
     }
 
     void getPercentageOfHeadTail(int noOfTimesCoinToFlip) {
