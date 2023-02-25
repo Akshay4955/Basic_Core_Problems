@@ -23,6 +23,15 @@ public class BasicProblems {
         basicProblems.computeQuotientRemainder(15,4);
         System.out.println("========================================");
         basicProblems.swappingOfTwoNos(12,15);
+        System.out.println("========================================");
+        basicProblems.checkNoEvenOrOdd(12);
+    }
+
+    void checkNoEvenOrOdd(int no) {
+        if (no % 2 == 0)
+            System.out.println(no + " is even number");
+        else
+            System.out.println(no + " is odd number");
     }
 
     void swappingOfTwoNos(int numOne, int numTwo) {
