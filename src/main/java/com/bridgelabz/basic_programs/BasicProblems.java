@@ -25,8 +25,17 @@ public class BasicProblems {
         basicProblems.swappingOfTwoNos(12,15);
         System.out.println("========================================");
         basicProblems.checkNoEvenOrOdd(12);
+        System.out.println("========================================");
+        basicProblems.checkVowelOrConsonant('A');
     }
+    void checkVowelOrConsonant(char alphabet) {
+        alphabet = Character.toLowerCase(alphabet);
+        if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == '0' || alphabet == 'u')
+            System.out.println(alphabet + " is a Vowel");
+        else
+            System.out.println(alphabet + " is a consonant");
 
+    }
     void checkNoEvenOrOdd(int no) {
         if (no % 2 == 0)
             System.out.println(no + " is even number");
