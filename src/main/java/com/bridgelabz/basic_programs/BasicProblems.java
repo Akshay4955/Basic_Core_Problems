@@ -4,14 +4,29 @@ import java.util.Scanner;
 
 public class BasicProblems {
     public static void main(String[] args) {
-        int noOfTimesCoinToFlip = 10450;
         BasicProblems basicProblems = new BasicProblems();
+        int noOfTimesCoinToFlip = 10450;
         basicProblems.getPercentageOfHeadTail(noOfTimesCoinToFlip);
+        System.out.println();
         int year = 2000;
         basicProblems.checkForLeapYear(year);
+        System.out.println();
         System.out.println("Enter the number to get power of two value");
         int number = new Scanner(System.in).nextInt();
         basicProblems.getPowerOfTwo(number);
+        System.out.println();
+        int harmonicNo = 15;
+        basicProblems.getNthHarmonicNo(harmonicNo);
+        System.out.println();
+    }
+
+    void getNthHarmonicNo(int harmonicNo) {
+        float sum = 0;
+        for (int i = 1; i <= harmonicNo; i++) {
+            sum = sum + (float) 1 / i;
+        }
+
+        System.out.println(harmonicNo + "th Harmonic no is: " + sum);
     }
 
     void getPowerOfTwo(int number) {
@@ -50,6 +65,7 @@ public class BasicProblems {
                 tailCount++;
             else
                 headCount++;
+
         }
 
         System.out.println("Tail Percentage is equal to : " + (float) Math.floor(tailCount * 100) / noOfTimesCoinToFlip + "%");
